@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <title>MY WEBSITE</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+   
+ .header
+	 {
+	   width:100%;
+	   background-color:rgba(0,0,0,0.1);
+	 }
+	 
+
+	 .header ul
+	 {
+	  text-align:center;
+	 }
+	 
+	 .header ul li
+	 {
+	  list-style:none;
+	  display: inline-block;
+	 }
+	 
+	 .header ul li a
+	 {
+	  display:block:
+	  text-decoration:none;
+	  text-transform:uppercase;
+	  color:#fff;
+	  font-size:20px;
+	  font-family:'Raleway'.sans-serif;
+	  letter-spacing:600;
+	  padding:25px;
+	  transition:all ease 0.5s;
+	 }
+	 
+	 .header ul li a:hover
+	 {
+	   background-color:#211b4385;
+	 }
+	 
+   .mySlides {display:none;}
+ 
+   
+   .mySlides{
+    position:fixed; 
+    top: 8%; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+	background-size:cover;
+   }
+   
+   .header{
+    width:100%;
+	
+  </style>
+</head>
+
+<body>
+
+      <div class="header">
+         <ul>
+             <li><a href="index.html">HOME</a></li>
+	         <li><a href="profile card.html">ABOUT ME</a></li>
+	         <li><a href="travelling.html">TRAVELLING BLOG</a></li>  
+			 <li><a href ="music.html">MUSIC</a></li>
+			 <li><a href ="feedback.html">FEEDBACK</a></li>
+			 <li><a href ="drama.html">DRAMA</a></li>
+         </ul>
+	  </div >
+
+  <div class="w3-content w3-section" >
+  <img class="mySlides" src="images/1.png" style width:80% >
+  <img class="mySlides" src="images/2.png" >
+  <img class="mySlides" src="images/3.png" >
+  <img class="mySlides" src="images/4.png" >
+  <img class="mySlides" src="images/5.png" >
+  </div>
+
+  <script>
+   var myIndex = 0;
+   carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+   }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+</body>
+</html>
+ </script>
+</html>
+ 
